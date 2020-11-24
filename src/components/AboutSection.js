@@ -5,9 +5,9 @@ import styled from 'styled-components';
 
 const AboutSection = () => {
   return (
-    <About className='about'>
-      <div className='description'>
-        <Description>
+    <About>
+      <Description>
+        <div className='title'>
           <Hide>
             <h2>We work to make</h2>
           </Hide>
@@ -19,13 +19,13 @@ const AboutSection = () => {
           <Hide>
             <h2>true.</h2>
           </Hide>
-        </Description>
+        </div>
         <p>
           Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skill
+          have professionals with amazing skills.
         </p>
         <button>Contact Us</button>
-      </div>
+      </Description>
       <Image>
         <img src={home1} alt='guy with a camera' />
       </Image>
