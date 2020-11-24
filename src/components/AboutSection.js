@@ -1,9 +1,11 @@
 import React from 'react';
 import home1 from '../img/home1.png'
+//Styled
+import styled from 'styled-components'
 
 const AboutSection = () => {
   return ( 
-    <div>
+    <div className='about'>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -26,5 +28,9 @@ const AboutSection = () => {
     </div>
    );
 }
+
+//Styled Components
+const About = styled.div`
+`
  
 export default AboutSection;
