@@ -5,10 +5,12 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
+//Import Styles
+import {About, Description, Image} from '../styles'
 
 const ServicesSection = () => {
   return (
-    <div className="services">
+    <About>
       <div className="description">
         <h2>
           High <span>quality</span> services
@@ -47,7 +49,7 @@ const ServicesSection = () => {
       <div className="image">
         <img alt="camera" src={home2} />
       </div>
-    </div>
+    </About>
   );
 };
 
