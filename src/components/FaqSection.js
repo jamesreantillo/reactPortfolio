@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 // Styles
 import styled from 'styled-components';
 import { About } from '../styles';
 
 const FaqSection = () => {
+  const [faqToggle, setFaqToggle] = useState(false);
   return (
     <Faq>
       <h2>
@@ -18,7 +19,7 @@ const FaqSection = () => {
             Necessitatibus, neque.
           </p>
         </div>
-        <div className="faq-line"></div>
+        <div className='faq-line'></div>
       </div>
       <div className='question'>
         <h4>Daily Schedule</h4>
@@ -29,7 +30,7 @@ const FaqSection = () => {
             Necessitatibus, neque.
           </p>
         </div>
-        <div className="faq-line"></div>
+        <div className='faq-line'></div>
       </div>
       <div className='question'>
         <h4>Diferrent Payment Methods</h4>
@@ -40,7 +41,7 @@ const FaqSection = () => {
             Necessitatibus, neque.
           </p>
         </div>
-        <div className="faq-line"></div>
+        <div className='faq-line'></div>
       </div>
       <div className='question'>
         <h4>What Products do you offer.</h4>
@@ -51,7 +52,7 @@ const FaqSection = () => {
             Necessitatibus, neque.
           </p>
         </div>
-        <div className="faq-line"></div>
+        <div className='faq-line'></div>
       </div>
     </Faq>
   );
