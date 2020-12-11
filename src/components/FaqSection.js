@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Toggle from './Toogle';
 // Styles
 import styled from 'styled-components';
 import { About } from '../styles';
+import { AnimateSharedLayout } from 'framer-motion';
 
 const FaqSection = () => {
   return (
@@ -10,8 +11,8 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle title='How do I start?'>
-        <div className='question'>
+      <AnimateSharedLayout>
+        <Toggle title='How do I start?'>
           <div className='answer'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -19,10 +20,8 @@ const FaqSection = () => {
               Necessitatibus, neque.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title='Daily Schedule'>
-        <div className='question'>
+        </Toggle>
+        <Toggle title='Daily Schedule'>
           <div className='answer'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -30,10 +29,8 @@ const FaqSection = () => {
               Necessitatibus, neque.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title='Diferrent Payment Methods'>
-        <div className='question'>
+        </Toggle>
+        <Toggle title='Diferrent Payment Methods'>
           <div className='answer'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -41,10 +38,8 @@ const FaqSection = () => {
               Necessitatibus, neque.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title='What Products do you offer.'>
-        <div className='question'>
+        </Toggle>
+        <Toggle title='What Products do you offer.'>
           <div className='answer'>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -52,8 +47,8 @@ const FaqSection = () => {
               Necessitatibus, neque.
             </p>
           </div>
-        </div>
-      </Toggle>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
