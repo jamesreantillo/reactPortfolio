@@ -15,6 +15,7 @@ import {
   slider,
   sliderContainer,
 } from '../animation';
+import { useScroll } from '../components/useScroll';
 
 const OurWork = () => {
   return (
